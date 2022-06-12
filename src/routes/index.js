@@ -1,13 +1,15 @@
 import Router from 'koa-router'
 import getHealth from './health/health'
-import users from './user/user'
+import { GETAllmovies } from './movies/GETAllmovies'
+import { GETMoviesByName } from './movies/GETMoviesByName'
+import { GETMoviesByClassifier } from './movies/GETMoviesByClassifier'
 
 const router = new Router()
 
 router.get('/health', getHealth)
 
-router.get('/api/users', users.getAllUsers)
-router.put('/api/user', users.createUser)
-router.delete('/api/user/:rol', users.removeUser)
+router.get('/api/movies', GETAllmovies)
+router.get('/api/movies/:name', GETMoviesByName)
+router.get('/api/movies/rating/:classifier/:order', GETMoviesByClassifier)
 
 export default router
