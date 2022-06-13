@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --runInBand",
     "build": "babel src --out-dir dist --copy-files",
-    "start": "babel src --out-dir dist --copy-files && node dist/index.js"
+    "start": "babel src --out-dir dist --copy-files && node dist/index.js",
+    "coverage": "jest --coverage"
   },
   "author": "Francisco Cabezas",
   "license": "ISC",
