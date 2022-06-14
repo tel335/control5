@@ -1,108 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655080468804" clover="3.2.0">
-  <project timestamp="1655080468804" name="All files">
-    <metrics statements="61" coveredstatements="20" conditionals="26" coveredconditionals="0" methods="14" coveredmethods="2" elements="101" coveredelements="22" complexity="0" loc="61" ncloc="61" packages="6" files="8" classes="8"/>
+<coverage generated="1655169977205" clover="3.2.0">
+  <project timestamp="1655169977205" name="All files">
+    <metrics statements="69" coveredstatements="60" conditionals="26" coveredconditionals="23" methods="16" coveredmethods="14" elements="111" coveredelements="97" complexity="0" loc="69" ncloc="69" packages="6" files="8" classes="8"/>
     <package name="src">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/index.js">
+      <file name="index.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\index.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.actions.movies">
-      <metrics statements="26" coveredstatements="3" conditionals="20" coveredconditionals="0" methods="7" coveredmethods="0"/>
-      <file name="movies.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/actions/movies/movies.js">
-        <metrics statements="26" coveredstatements="3" conditionals="20" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+      <metrics statements="26" coveredstatements="25" conditionals="20" coveredconditionals="19" methods="7" coveredmethods="7"/>
+      <file name="movies.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\actions\movies\movies.js">
+        <metrics statements="26" coveredstatements="25" conditionals="20" coveredconditionals="19" methods="7" coveredmethods="7"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="12804" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="21" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="25" count="147847" type="stmt"/>
+        <line num="26" count="147847" type="stmt"/>
+        <line num="28" count="147847" type="cond" truecount="4" falsecount="0"/>
+        <line num="29" count="147847" type="cond" truecount="4" falsecount="0"/>
+        <line num="30" count="147847" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="38" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="5" type="cond" truecount="1" falsecount="1"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="46" count="0" type="stmt"/>
+        <line num="44" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.routes">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/routes/index.js">
+      <file name="index.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\routes\index.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.routes.health">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="health.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/routes/health/health.js">
+      <file name="health.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\routes\health\health.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.routes.movies">
-      <metrics statements="15" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="GETAllmovies.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/routes/movies/GETAllmovies.js">
-        <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <metrics statements="15" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="GETAllmovies.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\routes\movies\GETAllmovies.js">
+        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
-      <file name="GETMoviesByClassifier.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/routes/movies/GETMoviesByClassifier.js">
-        <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+      <file name="GETMoviesByClassifier.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\routes\movies\GETMoviesByClassifier.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
       </file>
-      <file name="GETMoviesByName.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/routes/movies/GETMoviesByName.js">
-        <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <file name="GETMoviesByName.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\routes\movies\GETMoviesByName.js">
+        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">
-      <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="responseBuilder.js" path="/Users/franciscocabezas/Documents/TEL-335/2022_1/controles/control_5/src/utils/responseBuilder.js">
-        <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+      <metrics statements="16" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="responseBuilder.js" path="C:\Users\pancholopez\Documents\1USM\2022-1\TEL335-DAWM\git\control5\src\utils\responseBuilder.js">
+        <metrics statements="16" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
       </file>
     </package>
   </project>

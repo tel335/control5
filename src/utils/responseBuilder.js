@@ -5,7 +5,19 @@ exports.getOKResponse = (ctx, data) => {
 }
 
 exports.getErrorResponse = (ctx) => {
-    ctx.body = { status: 500, message: 'Hubo un error al mostrar toda la lista' }
+    ctx.body = { message: 'Hubo un error al mostrar toda la lista' }
     ctx.status = 500
+    return ctx
+}
+
+exports.getErrorResponseClassifier = (ctx) => {
+    ctx.body = {  message: 'Hubo un error al mostrar toda la lista' }
+    ctx.status = 500
+    return ctx
+}
+
+exports.getErrorResponseName = (ctx) => {
+    ctx.body = {message: 'No se han encontrado coincidencias' }
+    ctx.status = 200
     return ctx
 }
