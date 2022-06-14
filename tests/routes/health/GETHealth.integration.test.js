@@ -1,11 +1,16 @@
 import request from 'supertest'
 import { server, app } from '../../../src/index'
+import sinon from 'sinon'
 
 /**
  * El objetivo de este test de integración es probar
  * el endpoint para evaluar si la aplicación responde
  */
 describe('GET /health', () => {
+    beforeEach(() => {
+        sinon.restore()
+    })
+
     afterAll(() => {
         server.close()
     })
