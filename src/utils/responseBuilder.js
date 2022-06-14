@@ -13,8 +13,8 @@ exports.getErrorResponse = (ctx) => {
 exports.getResponse2 = (ctx,data) => {
     console.log("dsdadas")
     console.log(data)
-    if(data == []){
-        ctx.body = data
+    if(data === []){
+        ctx.body = {status: 200, message: 'No se han encontrado coincidencias' }
         ctx.status = 200
         return ctx
     }

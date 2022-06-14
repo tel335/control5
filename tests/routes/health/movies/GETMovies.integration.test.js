@@ -37,7 +37,7 @@ describe('GET /movies', () => {
     })
 
     test(' Una petición REST, con un parámetro name y devuelve todas las peliculas por nombre', async () => {
-       // sinon.stub(moviesAction, 'getAllMovies').returns(getMovies())
+        // sinon.stub(moviesAction, 'getAllMovies').returns(getMovies())
         const name2 = '/api/movies/:' + getNameMovies()
         const response = await request(app.callback()).get(name2)
         expect(response.status).toBe(200)
@@ -47,9 +47,21 @@ describe('GET /movies', () => {
     test(' Una petición REST, con un parámetro name y no devuelve', async () => {
         const name = '/api/movies/:' + getMoviesForName2()
         const response = await request(app.callback()).get(name)
-        console.log(response.status)
+        expect(response.status).toBe(200)
+        expect(response.body).toEqual({status: 200, message: 'No se han encontrado coincidencias' })
+    })
 
-        console.log(response.body)
+    test('Deberá devolver todas las películas ordenadas según classifier y order', async () => {
+
+        const name2 = '/api/movies/rating/ + ":" + getclassifier() + ":" + getOrder()'
+        const response = await request(app.callback()).get(name2)
+        expect(response.status).toBe(200)
+        expect(response.body).toEqual({})
+    })
+
+    test(' Una petición REST, con un parámetro name y no devuelve', async () => {
+        const name = '/api/movies/rating/:classifier/:order' + getMoviesForName2()
+        const response = await request(app.callback()).get(name)
         expect(response.status).toBe(200)
         expect(response.body).toEqual({status: 200, message: 'No se han encontrado coincidencias' })
     })
@@ -75,3 +87,4 @@ function getNameMovies(){
 function respuesta(){
 return   {"Title": "This Christmas", "US Gross": 49121934, "Worldwide Gross": 49778552, "US DVD Sales": 17922664, "Production Budget": 13000000, "Release Date": "Nov 21 2007", "MPAA Rating": "PG-13", "Running Time min": 118, "Distributor": "Sony/Screen Gems", "Source": "Original Screenplay", "Major Genre": "Drama", "Creative Type": "Contemporary Fiction", "Director": null, "Rotten Tomatoes Rating": 55, "IMDB Rating": 5.4, "IMDB Votes": 3351}
 }
+
