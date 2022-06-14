@@ -14,13 +14,13 @@ describe('Get /api/movies/:name', () => {
   })
   test('should return empty if no name is matched ', async () => {
     const response = await request(app.callback()).get('/api/movies')
-    sinon.stub(moviesActions, 'getAllMovies').returns(mockFail())
+    sinon.stub(moviesActions, 'getAllMovies').returns(undefined)
     expect(response.status).toBe(200)
     expect(response.body).toEqual({ "message": "No se han encontrado coincidencias", "status": 200 })
   })
 
   test('should respond movies data by name', async () => {
-    sinon.stub(movieActions, 'getAllMovies').returns(getMockMovies()) //sinon.stub( variable que trae todas las funciones, nombre de la función (lo que va despues del .export))
+    sinon.stub(movieActions, 'getAllMovies').returns(getMockMovies()) 
     const response = await request(app.callback()).get('/api/movies/The Land Girls')
     expect(response.status).toBe(200)
     expect(response.body).toEqual(getMockMovies())
