@@ -9,3 +9,10 @@ exports.getErrorResponse = (ctx) => {
     ctx.status = 500
     return ctx
 }
+
+//necesario para caso de uso 2 modificacion
+exports.getErrorResponseNuevo = (ctx) => {
+    ctx.body = { status: 200, message: 'No se encontraron coincidencias' }
+    ctx.status = 200
+    return ctx
+}

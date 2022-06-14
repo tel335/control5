@@ -1,6 +1,7 @@
 import request from 'supertest'
 import { server, app } from '../../../src/index'
 
+
 /**
  * El objetivo de este test de integración es probar
  * el endpoint para evaluar si la aplicación responde
