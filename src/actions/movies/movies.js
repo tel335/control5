@@ -45,3 +45,8 @@ function getOrderParam (order) {
     else if (order == 'asc') return 1
     return undefined
 }
+
+let movies=[]
+exports.clearmMovies = () => {
+    movies = []
+}
