@@ -10,6 +10,7 @@ exports.getMoviesByName = (name) => {
     const filteredMovies = movies.filter(
       (movie) => regex.test(movie.Title)
     )
+    if (filteredMovies == []) return 'No se han encontrado coincidencias'
     return filteredMovies
 }
 
