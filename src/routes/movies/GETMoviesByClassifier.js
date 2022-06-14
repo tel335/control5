@@ -7,3 +7,4 @@ exports.GETMoviesByClassifier = (ctx) => {
     else ctx = getErrorResponse(ctx)
     return ctx
 }
+
